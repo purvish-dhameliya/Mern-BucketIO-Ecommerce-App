@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montaga&family=Montez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Belanosima", sans-serif;
+}
+.navbar {
+  text-transform: uppercase;
+  -webkit-box-shadow: -1px 13px 37px -10px rgba(16, 20, 17, 1);
+  -moz-box-shadow: -1px 13px 37px -10px rgba(16, 20, 17, 1);
+  box-shadow: -1px 13px 37px -10px rgba(16, 20, 17, 1);
+}
+
+.active {
+  border-bottom: 1px solid tomato;
+}
+
+.footer a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.product-link {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.ShadowImg img {
+  background: #000;
+}
+
+.showingCard {
+  transition: transform 1s; /* Add transition for smooth effect */
+  background-blend-mode: multiply;
+}
+
+.card-img-container {
+  overflow: hidden; /* Ensure the image does not overflow the card */
+}
+
+.sidebar {
+  position: -webkit-sticky;
+  position: block;
+  top: 0;
+}
+
+.sidebar {
+  width: 25%;
+  height: 110vh;
+  min-height: 200px;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+}
+
+.main {
+  width: 60%;
+  height: 200vh;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main,
+.sidebar {
+  border-radius: 10px;
+  padding: 15px;
+}
+@media (max-width: 576px) {
+  .custom-nav {
+    font-size: 24px;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
